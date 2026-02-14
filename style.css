@@ -1,0 +1,248 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+     font-family: "Poppins","Lato","Roboto","Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Toggle Button */
+.toggle-btn {
+  position: fixed;
+  top: 40%;
+  left: -40px;
+  padding: 12px 20px;
+  border: none;
+  background: #002D13;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  transform: matrix(0, -1, 1, 0, 0, 0);
+}
+
+/* Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Popup Box */
+
+ .popup-box {
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  text-align: left;
+  border: 2px solid #FFFFFF;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(26px);
+  -webkit-backdrop-filter: blur(26px);
+  position: fixed;
+  right: 20px;   /* distance from left */
+  top: 30%;
+  transform: translateY(-50%);
+}
+
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+/* Header */
+.header{
+   width:100%;
+   max-width:1200px;
+   /* margin: 0 auto -17% auto; */
+   padding:0;
+   background-color: #000;
+   z-index: 100;
+
+}
+.navbar-container {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 70px;
+    margin: 0 auto 0 auto;
+}
+.logo{
+  position:absolute;
+  top:-5px;
+  width:100px;
+  height:90px;
+}
+
+
+
+/* Hero Section */
+.hero-container{
+width:100%;
+background-image:url( 
+    './Assets/hero.webp');
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 150px 70px 70px 70px;
+  margin: 0 auto;
+}
+.hero-content{
+  font-family:"Montserrat" ;
+  font-size:60px;
+  font-weight: bold;
+  color:#002D13;
+}
+.details-container{
+  display: flex;
+  justify-content: space-between;
+}
+.price{
+  background-color: #FF9200;
+  width:480px;
+  padding:20px;
+  color:#FFFFFF;
+  font-size: 40px;
+  font-family:"Lato";
+  font-weight:300;
+}
+.amount{
+  font-family:"Lato";
+  font-weight: 600;
+}
+.cta{
+  background-color: #FFFFFF;
+  width:360px;
+  padding:20px;
+  color:#82988A;
+  font-size: 28px;
+  font-family:"Montserrat" ;
+  font-weight:500;
+  position: fixed;
+  bottom:70px;
+  right:15px;
+  text-decoration: none;
+}
+
+/* About Section */
+.about-container{
+  width:100%;
+background-image:url( 
+    './Assets/About.webp');
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  margin: 0 auto;
+}
+.content-container{
+  width:50%;
+  background-color: #152c1186;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:90px 50px;
+  height:90vh;
+}
+.about-heading{
+  font-family: "poppins";
+  font-size:100px;
+  color:#FFFFFF;
+  line-height: 120px;
+}
+.about-description{
+  font-family: "poppins";
+  font-size:20px;
+  font-weight: 100;
+  color:#FFFFFF
+}
+.highlight-text{
+  font-weight:600;
+}
+/* project section */
+.project-container{
+  width:100%;
+background-image:url( 
+    './Assets/project.webp');
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: 0 auto;
+}
+/* Amenities Section */
+.amenities-container{
+width:100%;
+background-image:url( 
+    './Assets/Amenities.webp');
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100vh;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding:50px;
+}
+.amenities{
+  width:60%;
+  display: flex;
+  flex-wrap: wrap;
+  gap:100px;
+
+}
+.amenities-content-container{
+  width:40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.amenities-wrapper{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color:#FFFFFF;
+
+}
+.amenities-name{
+  font-size: 18px;
+font-weight:100;
+font-family: "Roboto";
+text-align: center;
+}
+.amenities-image{
+  width:84px;
+  height:67px;
+}
