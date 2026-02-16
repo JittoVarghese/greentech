@@ -324,7 +324,7 @@ text-align: center;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  margin: 0 auto;
+  margin: 120px auto;
   padding:50px;
   gap:40px;
 }
@@ -387,7 +387,7 @@ text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 120px auto;
   padding:50px;
   gap:40px;
 }
